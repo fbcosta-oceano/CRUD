@@ -5,7 +5,7 @@ const openModal = () => document.getElementById('modal').classList.add('active')
 const closeModal = () => {
     clearFields()
     document.getElementById('modal').classList.remove('active')
-}
+}     
 
 const getLocalStorage = () => JSON.parse(localStorage.getItem('db_client')) ?? []
 const setLocalStorage = (dbclient) => localStorage.setItem('db_client', JSON.stringify(dbclient))
